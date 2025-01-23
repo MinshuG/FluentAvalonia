@@ -706,8 +706,9 @@ public partial class TabView : TemplatedControl
                 {
                     shouldMoveFocusToNewTab = true;
                 };
-
+                
                 _tabContentPresenter.Content = tvi.Content;
+                _tabContentPresenter.DataContext = tvi.DataContext;
                 _tabContentPresenter.ContentTemplate = tvi.ContentTemplate;
 
                 // It is not ideal to call UpdateLayout here, but it is necessary to ensure that the ContentPresenter has expanded its content

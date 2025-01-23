@@ -154,9 +154,10 @@
                                           ContentTemplate="{TemplateBinding TabStripFooterTemplate}"/>
                     </Grid>
 
+                    <!-- minshu: can't be overriden by styles so removing it -->
+                    <!-- Background="{DynamicResource TabViewItemHeaderBackgroundSelected}" -->
                     <ContentPresenter Name="TabContentPresenter"
                                       Grid.Row="1"
-                                      Background="{DynamicResource TabViewItemHeaderBackgroundSelected}"
                                       BorderBrush="{TemplateBinding BorderBrush}"
                                       BorderThickness="{TemplateBinding BorderThickness}" />
 
